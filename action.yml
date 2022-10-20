@@ -1,0 +1,15 @@
+name: "Dependency Builder"
+description: "Builds a graph of all dependencies in project"
+author: "Justin Villena"
+
+inputs:
+  GITHUB_TOKEN:
+    description: "Github token"
+    required: true
+  TENOR_TOKEN:
+    description: "Tenor API token"
+    required: true
+
+runs:
+  using: "node12"
+  main: "dist/index.js"

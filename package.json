@@ -1,0 +1,20 @@
+{
+  "name": "dependencies-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jvillena1/dependencies-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jvillena1/dependencies-builder/issues"
+  },
+  "homepage": "https://github.com/Jvillena1/dependencies-builder#readme"
+}
