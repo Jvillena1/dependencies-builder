@@ -1,16 +1,16 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	/* webpack/runtime/compat */
-/******/ 	
-/******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
+'use strict';
+
+var deps = require('@ced/deps');
+
+const core = require("@actions/core");
+
 async function run() {
-  console.log("Hello World!");
+  const path = core.getInput("path");
+  const ignore = core.getInput("ignore");
+  const nameMappings = core.getInput("name-mappings");
+  const exclude = core.getInput("exclude");
+  const output = core.getInput("output");
+  deps.generateDependencies(path, ignore, nameMappings, exclude, output);
 }
 
 run();
-
-module.exports = __webpack_exports__;
-/******/ })()
-;
